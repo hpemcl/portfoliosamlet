@@ -13,7 +13,21 @@
 <section class="hero px-0 py-0 pl-0 pr-0 m-0 has-background-danger-light is-fullheight">
     
     <div class="hero-head">
-        <nav class="navbar has-background-danger-light is-white pt-5 pr-4 mr-4 ">
+        <nav class="navbar has-background-danger-light is-white pt-2 pl-3 pr-0 mr-2 ">
+
+            <div class="navbar-brand">
+                <a class="navbar-item" >
+                  <h2 class=" is-size-5-mobile is-hidden-fullhd is-hidden-widescreen is-hidden-desktop has-text-weight-semibold is-uppercase has-text-black"> Hannah Clausen </h2> 
+                  <br> 
+                  <h2 class=" is-size-5-mobile is-hidden-fullhd is-hidden-widescreen is-hidden-desktop has-text-weight-semibold is-uppercase has-text-black"> Hannah Clausen </h2>
+                </a>
+
+            <!--div class="navbar-start is-multiline">
+                <a class="navbar-item">
+                    <h2 class=" is-hidden-fullhd is-hidden-widescreen is-hidden-desktop is-size-5-mobile is-size-5-tablet has-text-weight-semibold is-uppercase has-text-black">Hannah Clausen</h2>
+                    <h1 class=" is-hidden-fullhd is-hidden-widescreen is-hidden-desktop is-size-2-mobile is-size-3-tablet has-text-weight-bold is-uppercase has-text-black">Portfolio</h1>
+                </a>   
+            </div-->
 
             <!--burgermenu-->
             <a class="navbar-burger is-white" id="burger">
@@ -21,63 +35,85 @@
                 <span></span>
                 <span></span>
             </a>
+            
         
             <div class="navbar-menu p-0 has-background-danger-light has-text-black is-size-4 is-uppercase has-text-weight-bold" id="nav-links">
-            <!-- links -->
-            <div class="navbar-end pl-4 ">
-                <a class="navbar-item pl-4 is-size-3" href="">Home</a>
-                <a class="navbar-item pl-4 is-size-3" href="work.html">Work</a>
-                <a class="navbar-item pl-4 is-size-3" href="volunteering.html">Volunteering</a>
-                <a class="navbar-item pl-4 is-size-3" href="aboutme.html">About me</a>
-            </div>
+                <!-- links -->
+                <div class="navbar-end pl-4 ">
+                    <a class="navbar-item pl-4 is-size-3" href="">Home</a>
+                    <a class="navbar-item pl-4 is-size-3" href="work.html">Work</a>
+                    <a class="navbar-item pl-4 is-size-3" href="volunteering.html">Volunteering</a>
+                    <a class="navbar-item pl-4 is-size-3" href="aboutme.html">About me</a>
+                </div>
             </div>
         </nav>
         
-            <div class="container is-fullhd ">
-                <div class="columns is-vcentered is-fullheight">
-                    <!-- Image Container -->
-                    <div class="column is-half image-container">
-                        <figure class="image is-1by1">
-                            <img src="/assets/mig_badminton_sorthvid.png" class="" alt="">
-                        </figure>
-                    </div>
+        <div class="container is-fullhd is-fullheight">
+            <div class="columns is-vcentered is-fullheight mr-0">
+                <!-- Image Container -->
+                <!-- On larger screens, display the image horizontally -->
+                <div class="column is-half-fullhd is-half-desktop is-half-widescreen is-hidden-tablet is-half image-container is-hidden-mobile m-0 p-0">
+                    <figure class="image mr-0">
+                        <img src="assets/mig_badminton_sorthvid.png" class="is-horizontal" alt="">
+                    </figure>
+                </div>
         
-                    <div class="navbar-brand has-text-right is-right mr-0 pr-0">
-                        <a class="navbar-item pl-0 m-0 has-text-left is-hidden-touch is-size-7" href="">
+      
+                <div class="column pt-3 is-one-third-widescreen is-half-desktop  is-multiline pl-3">
+                    <h2 class="is-size-2-widescreen is-size-3-desktop is-hidden-tablet-only is-hidden-mobile subtitle has-text-weight-semibold is-uppercase has-text-black">Hannah Clausen</h2>
+                    <h1 class="is-size-1-widescreen is-size-2-desktop is-hidden-tablet-only is-hidden-mobile has-text-weight-bold title is-uppercase has-text-black">Portfolio</h1>
+                                        
+                
+                    <!-- On mobile devices, display the image vertically -->
+                    <div class="column is-half image-container is-hidden-desktop is-hidden-widescreen is-hidden-fullhd is-12-tablet is-12-mobile">
+                        <figure class="image ">
+                            <div class="vertical-image-wrapper">
+                                <img src="assets/mig_badminton_sorthvid.png" class="is-vertical"  alt="">
+                            </div>
+                                
+                            <div class="column social-icon absolute-position is-hidden-desktop is-hidden-widescreen is-hidden-fullhd ">
+                                <a class="navbar-item is-size-7 has-text-right justify-content: flex-end;" href="#">
+                                    <img src="assets/email.svg" style="max-height: 40px" class="">
+                                </a>
+                                <a class="navbar-item is-size-7 mt-3 has-text-right justify-content: flex-end;" href="#">
+                                    <img src="assets/ig.svg" style="max-height: 40px" class="">
+                                </a>
+                                <a class="navbar-item is-size-7 mt-3 has-text-right justify-content: flex-end;" href="#">
+                                    <img src="assets/linkedin.svg" style="max-height: 40px" class="">
+                                </a>
+                                <a class="navbar-item is-size-7 mt-3 has-text-right justify-content: flex-end;" href="#">
+                                    <img src="assets/facebook.svg" style="max-height: 40px" class="">
+                                </a>
+                        </figure>
+                        
+                    </div>
+                
+                     <!-- Social icons on top of the image -->
+                
+                    
+                
+                    <div class="container navbar-brand has-text-left mr-0 pr-0 is-full">
+                        <a class="navbar-item pl-0 m-0 has-text-left is-hidden-mobile is-hidden-tablet is-size-7" href="">
                             <img src="assets/email.svg" style="max-height: 60px" class="">
                         </a>
-                    
-                        <a class="navbar-item p-0 m-0 has-text-left pl-3 is-hidden-touch is-size-7" href="">
+                        <a class="navbar-item p-0 m-0 has-text-left pl-3  is-hidden-mobile is-hidden-tablet is-size-7" href="">
                             <img src="assets/ig.svg" style="max-height: 60px" class="">
                         </a>
-                        <a class="navbar-item p-0 m-0 has-text-left pl-3 is-hidden-touch is-size-7" href="">
+                        <a class="navbar-item p-0 m-0 has-text-left pl-3  is-hidden-mobile is-hidden-tablet is-size-7" href="">
                             <img src="assets/linkedin.svg" style="max-height: 60px" class="">
                         </a>
-                        <a class="navbar-item p-0 m-0 has-text-left pl-3 is-hidden-touch is-size-7" href="">
+                        <a class="navbar-item p-0 m-0 has-text-left pl-3  is-hidden-mobile is-hidden-tablet is-size-7" href="">
                             <img src="assets/facebook.svg" style="max-height: 60px" class="">
                         </a>
-                    
-                        <!-- On mobile devices, display social icons in a dropdown menu -->
-                        <div class="navbar-dropdown is-hidden-desktop has-text-right-custom">
-                            <a class="navbar-item is-size-7" href="#">
-                                <img src="assets/email.svg" style="max-height: 30px" class="">
-                            </a>
-                            <a class="navbar-item is-size-7" href="#">
-                                <img src="assets/ig.svg" style="max-height: 30px" class="">
-                            </a>
-                            <a class="navbar-item is-size-7" href="#">
-                                <img src="assets/linkedin.svg" style="max-height: 30px" class="">
-                            </a>
-                            <a class="navbar-item is-size-7" href="#">
-                                <img src="assets/facebook.svg" style="max-height: 30px" class="">
-                            </a>
+                
                         </div>
+                </div>
                     </div>
-                    
-                    
-                    
+                </div> 
             </div>
-        </section>
+        </div>  
+    </div>                 
+    </section>
   
 
   <script src="index.js"></script>
