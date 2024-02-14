@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// Set your brand colors
+$browny: #989181;
+$orange: #D6CCC7;
+$brown: #D6CCC7;
+$beige-light: #E6D4BD;
+$beige-lighter: #F7F2EA;
+$size-1: 8rem;
+$size-2: 6rem;
+$size-0: 3rem;
+$size-medium: 3rem;
+
+
+// Definer farvevariabel
+$footer-background-color: #E6D4BD;
+
+// Anvend farvevariabel
+.footer {
+    background-color: $footer-background-color;
+}
+
+
+// Tilpas farverne til burgermenuens aktive tilstand
+.navbar.is-primary .navbar-burger.is-active {
+    // Ændrer baggrundsfarven på burgermenuen
+    background-color: black;
+    // Ændrer farven på de tre linjer (span-elementer) i burgermenuen
+    span {
+        background-color: black;
+    }
+}
+
+.navbar.is-primary .navbar-burger{
+    color: black;
+}
+
+.navbar.is-primary .navbar-menu.is-active {
+    // Ændrer baggrundsfarven på navbar-menuen
+    background-color: #D6CCC7;
+    display: flex;
+    align-items: center; /* Centrerer indholdet lodret */
+    justify-content: center; /* Centrerer indholdet vandret */
+    height: 95%;
+    
+    // Ændrer farven på teksten i navbar-menuen
+    a.navbar-item {
+        color: black;
+        text-align: center;
+        font-weight: bold;
+        
+        
+        
+    }
+}
+
+
+.head-text {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+.box-container {
+    position: static;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    height: 95vh;
+    z-index: 2; 
+    box-sizing: border-box;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+
+.horizontal-links {
+    display: flex; 
+    flex-direction: row; 
+    list-style: none; 
+}
+
+.horizontal-links li {
+    margin-right: 10px;
+}
+
+
+
+// Update Bulma's global variables
+$family-sans-serif: "Montserrat", sans-serif;
+$family-monospace: "Poppins", sans-serif;
+$grey-dark: $brown;
+$grey-light: $beige-light;
+$primary: $browny;
+$link: $orange;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+$body-background-color: $browny;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+$dimensions: (
+  "32x32": 32px,
+  "64x64": 64px,
+  "128x128": 128px,
+  "256x256": 256px,
+);
+
+// Importer resten af Bulma
+@import "../node_modules/bulma/bulma";
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/form/_all.sass";
+@import "../node_modules/bulma/sass/components/navbar.sass";
+@import "../node_modules/bulma/sass/layout/hero.sass";
+@import "../node_modules/bulma/sass/layout/section.sass";
