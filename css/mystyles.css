@@ -1,5 +1,62 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.custom-button {
+  background-color: transparent !important;
+  border: 2px solid #F7F2EA !important;
+  color: #F7F2EA !important;
+  transition: all 0.3s ease !important; }
+  .custom-button:hover {
+    background-color: #F7F2EA !important;
+    color: #000 !important; }
+
+.bordered-image {
+  border: 2px solid black;
+  padding: 15px; }
+
+/* Til mobilen */
+@media screen and (max-width: 768px) {
+  .columns.is-multiline .column {
+    width: 100% !important; } }
+
+.horizontal-links {
+  justify-content: space-around;
+  align-items: stretch;
+  flex-wrap: wrap;
+  align-content: center; }
+
+.bg-change {
+  background-color: #D6CCC7;
+  border-radius: 5px; }
+
+.rounded-box {
+  border-radius: 8px; }
+
+.rounded-image {
+  border-radius: 8px;
+  padding: 10px;
+  max-width: 50%;
+  height: auto; }
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .columns.is-mobile > .column.is-one-fifth {
+    width: 35% !important; } }
+
+@media screen and (min-width: 769px) {
+  .rounded-image {
+    max-width: 100%; } }
+
+/* Juster kolonnebredden for mobil */
+@media screen and (max-width: 768px) {
+  .column.is-4 {
+    width: 100%; } }
+
+/*ændring af footeren*/
+@media screen and (max-width: 768px) {
+  .horizontal-links {
+    flex-direction: column !important;
+    align-items: center; } }
+
 .footer {
   background-color: #E6D4BD; }
 
