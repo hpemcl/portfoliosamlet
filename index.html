@@ -17,7 +17,7 @@
     <nav class="navbar is-primary pt-4 ">
         <div class="navbar-brand ">
             <a class="navbar-item is-hidden-desktop" href="#">
-              <img src="/assets/title - mobile.svg" alt="Logo" style="width: 80px; height: auto;" >
+              <img src="assets/title-mobile.svg" alt="Logo" style="width: 80px; height: auto;" >
             </a>
 
         <!--burgermenu-->
@@ -41,10 +41,9 @@
     <!--navbar slut-->
 
 
-    <!--head text-->
-    
+    <!--head text - desktop-->
     <div class="columns is-hidden-mobile is-hidden-tablet-only">
-        <div class="column p-0 " style="max-width: 652px; overflow: hidden ;">
+        <div class="column p-0 is-4" style=" overflow: hidden ;">
             <figure class="image is-256x256 ">
                 <img src="assets/mig_badminton_sorthvid.png" class="is-vertical" alt="">
             </figure>
@@ -70,12 +69,40 @@
                     <img src="assets/linkedin.svg" style="max-height: 40px;" class="">
                 </a>
                 <a class="navbar-item" href="#">
-                    <img src="assets/facebook.svg" style="max-height: 40px;" class="">
+                    <img src="assets/facebook.svg" style="max-height: 40px; margin-bottom: 8px;" class="">
                 </a>
             </div>
             </div>
         </div>
     </div>
+
+
+    <!--head text - mobilen-->
+    <div class="columns is-hidden-desktop">
+        <div class="column pr-0 mr-0 pb-0 mb-0">
+            <figure class="image is-256x256" style="position: relative;">
+                <!-- Billede baggrund -->
+                <img src="assets/mig_badminton_sorthvid.png" class="is-vertical" alt="">
+                
+                <!-- Overlagte billeder -->
+                <div class="column is-flex is-align-items-flex-end is-flex-direction-column" style="position: absolute; top: 5px; right: -8px;">
+                    <a class="navbar-item" href="#">
+                        <img src="assets/email.svg" style="max-height: 40px;" class="">
+                    </a>
+                    <a class="navbar-item" href="#">
+                        <img src="assets/ig.svg" style="max-height: 40px;" class="">
+                    </a>
+                    <a class="navbar-item" href="#">
+                        <img src="assets/linkedin.svg" style="max-height: 40px;" class="">
+                    </a>
+                    <a class="navbar-item" href="#">
+                        <img src="assets/facebook.svg" style="max-height: 40px;" class="">
+                    </a>
+                </div>
+            </figure>
+        </div>
+    </div>
+    
 
 
     <script src="index.js"></script>
