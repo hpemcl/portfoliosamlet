@@ -1,6 +1,16 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.line {
+  border: 0;
+  border-top: 1px solid #D6CCC7;
+  width: 80%;
+  margin: 100px auto;
+  z-index: 100; }
+
+.is-flex-direction-column a:not(:last-child) {
+  margin-bottom: 10px; }
+
 .custom-button {
   background-color: transparent !important;
   border: 2px solid #F7F2EA !important;
@@ -106,6 +116,43 @@
 
 .horizontal-links li {
   margin-right: 10px; }
+
+.custom-image-size {
+  width: 200px;
+  height: 200px; }
+
+/*ikon animation*/
+.has-text-center {
+  text-align: center; }
+
+.centered-svg {
+  display: block;
+  margin: auto; }
+
+.has-text-center {
+  text-align: center; }
+
+.centered-svg {
+  display: block;
+  margin: auto; }
+
+.animated {
+  animation: bounce 1s ease infinite; }
+
+/* Mindre størrelse på mobilen */
+@media screen and (max-width: 768px) {
+  svg.animated {
+    margin-top: 50px;
+    height: 40px;
+    width: 40px; } }
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(-10px); }
+  100% {
+    transform: translateY(0); } }
 
 /*! bulma.io v0.9.4 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
